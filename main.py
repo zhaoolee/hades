@@ -28,7 +28,7 @@ fileNameMedia = {
     "Patroclus": {"zh_cn_desc": "普特洛克勒斯(陨落的勇士)", "images": ["7f82cccde6c473e5f816ec7a8693df1c.png"]},
     "Persephone": {"zh_cn_desc": "珀尔塞福涅(常青女神,冥界皇后)", "images": ["018ca4eec863cf4222c8cd9f3a112462.jpg", "Wallpaper_Persephone.png"]},
     "Poseidon": {"zh_cn_desc": "波塞冬(海神)", "images": ["OlympianMontage_Poseidon.png"]},
-    "Scratch": {"zh_cn_desc": "离开", "images": ["f068a6af8826dc56c74d2d090dcad5fe.gif"]},
+    "Scratch": {"zh_cn_desc": "离开", "images": ["bc404de0c19b45066479f8072de2c26a.png","f068a6af8826dc56c74d2d090dcad5fe.gif"]},
     "Sisyphus": {"zh_cn_desc": "西西弗斯(他欺骗了亡灵，因此他被判处在塔耳塔罗斯从事长期的劳役)", "images": ["Sisyphus.png"]},
     "Skelly": {"zh_cn_desc": "骨头(训练傀儡)", "images": ["8eb62ecc0b4c5895c83bd0eead18de1d.jpg"]},
     "Songs": {"zh_cn_desc": "歌声", "images": ["816041ad4fd535910c2b259ba7b608a2.jpg","05d5f58e485c89055a3f486de237f4f3.jpg"]},
@@ -108,7 +108,7 @@ def createMarkDownInfo(langCsvInfo):
                 f"<tr><td width='400'>{value["en_line"]}</td><td width='400'>{value["zh_cn_line"]}</td></tr>"
             )
 
-    markdown_text = markdown_text + f"</table><br><a href='#{fileName}Index'>Return {fileName} Index / 返回{fileNameMedia[fileName]["zh_cn_desc"]}目录)</a>"
+    markdown_text = markdown_text + f"</table><br><a href='#{fileName}Index'>Return {fileName} Index / 返回{fileNameMedia[fileName]["zh_cn_desc"]}目录</a>"
     # print("==markdown_text==", markdown_text)
 
     return markdown_text
