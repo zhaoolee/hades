@@ -1,10 +1,16 @@
 __pycache__/
+.venv*/
+.tools/
 *.py[cod]
 .pytest_cache/
 .coverage
 web/node_modules/
 web/dist/
 web/public/data/
+web/public/audio/*
+!web/public/audio/.gitkeep
+web/public/portraits/*
+!web/public/portraits/.gitkeep
 web/*.tsbuildinfo
 web/vite.config.js
 web/vite.config.d.ts

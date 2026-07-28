@@ -1,7 +1,7 @@
 # Hades 中英台词全集
 
 > **Hades Listener 网页版：** [https://zhaoolee.github.io/hades/](https://zhaoolee.github.io/hades/)<br>
-> 直接查看完整中英台词，或使用浏览器英文语音进行听写练习。无需登录，学习进度保存在本机浏览器。
+> 直接查看完整中英台词，或使用浏览器英文语音进行听写练习。拥有正版游戏的用户还可以在本地提取游戏原声。无需登录，学习进度保存在本机浏览器。
 
 从本机安装的《Hades》一代游戏文件中提取并合并完整中英台词。新版实现不再依赖旧版 `pandas` 脚本，也不会按台词文本全局去重；**每个台词 ID 都会保留**。
 
@@ -54,7 +54,53 @@ Content/Scripts/*.lua
 - **查看模式**：按角色筛选、全文搜索、浏览中英对照并朗读英文。
 - **听写模式**：隐藏英文原文，根据中文提示和语音输入答案，逐词显示遗漏与多余内容。
 - **学习进度**：记录完成数、正确率和待复习台词，数据只保存在浏览器 `localStorage`。
-- **语音说明**：使用设备自带的浏览器英文 TTS，不是游戏原声，不需要 API 密钥。
+- **语音说明**：默认使用设备自带的浏览器英文 TTS；本地提取原声后自动优先播放游戏语音，缺失或加载失败时回退 TTS。
+
+### 从本机正版游戏提取原声
+
+原版语音版权归 Supergiant Games 所有，仓库和 GitHub Pages **不分发游戏音频**。以下命令只从用户自己安装的正版游戏中提取语音到 `web/public/audio/`；该目录已加入 `.gitignore`，不会被提交。
+
+```bash
+uv venv .venv-audio
+uv pip install --python .venv-audio/bin/python -r requirements-audio.txt
+
+# 回退解码需要系统提供 ffmpeg（Ubuntu/Debian：sudo apt install ffmpeg）
+ffmpeg -version
+
+# 下载官方 vgmstream Linux 版并解压（处理 fsb5 不认识的少量 Vorbis 头）
+mkdir -p .tools/vgmstream
+curl -fL https://github.com/vgmstream/vgmstream/releases/download/r2117/vgmstream-linux.zip \
+  -o /tmp/vgmstream-linux.zip
+unzip -oq /tmp/vgmstream-linux.zip -d .tools/vgmstream
+
+.venv-audio/bin/python -m hades_dialogue extract-audio \
+  --game-root "$HOME/.local/share/Steam/steamapps/common/Hades" \
+  --vgmstream-cli .tools/vgmstream/vgmstream-cli
+```
+
+`fsb5` 会快速无损重建绝大多数 Ogg；遇到其旧版头部表不认识的语音时，程序自动通过官方 [vgmstream](https://github.com/vgmstream/vgmstream) 解码，并用系统 `ffmpeg` 转为 Ogg。提取过程会持续显示进度。完成后启动网页：
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+`web/scripts/prepare-data.mjs` 会读取本地音频清单，只给成功提取的台词附加原声路径。没有本地音频时，网页行为与 GitHub Pages 一致，继续使用浏览器 TTS。
+
+### 从本机正版游戏提取人物立绘
+
+人物立绘同样只从用户自己的正版游戏中提取，不随仓库或 GitHub Pages 分发。提取结果保存在已被 Git 忽略的 `web/public/portraits/`：
+
+```bash
+uv venv .venv-portraits
+uv pip install --python .venv-portraits/bin/python -r requirements-portraits.txt
+
+.venv-portraits/bin/python -m hades_dialogue extract-portraits \
+  --game-root "$HOME/.local/share/Steam/steamapps/common/Hades"
+```
+
+提取工具会从 `GUI.pkg` 中导出主要角色立绘、裁去透明边缘并转换为适合网页加载的 WebP。网页会按台词频道显示对应人物；本地图片缺失时仍可正常显示纯文字界面。
 
 本地启动：
 

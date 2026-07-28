@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 from hades_dialogue.parsers import (
     _enclosing_spans,
@@ -14,6 +15,7 @@ from hades_dialogue.parsers import (
     parse_subtitle_csv,
 )
 from hades_dialogue.pipeline import build_records, collect, extract
+from hades_dialogue.audio import extract_audio
 
 
 class ParserTests(unittest.TestCase):
@@ -225,6 +227,175 @@ class EndToEndTests(unittest.TestCase):
         self.assertIn("game root", proc.stderr.lower())
 
 
+class AudioExtractionTests(unittest.TestCase):
+    def test_extract_audio_exports_only_known_dialogue_ids_and_writes_manifest(self):
+        class FakeBank:
+            samples = [
+                SimpleNamespace(name="Hero_0001"),
+                SimpleNamespace(name="Hero_9999"),
+                SimpleNamespace(name="../escape"),
+            ]
+
+            def rebuild_sample(self, sample):
+                return f"ogg:{sample.name}".encode()
+
+            def get_sample_extension(self):
+                return "ogg"
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            output = root / "public/audio"
+
+            result = extract_audio(
+                game,
+                output,
+                dialogue_ids={"Hero_0001", "Hero_0002"},
+                bank_loader=lambda data: FakeBank(),
+            )
+
+            self.assertEqual(result["exported"], 1)
+            self.assertEqual(result["missing"], 1)
+            self.assertEqual((output / "Hero_0001.ogg").read_bytes(), b"ogg:Hero_0001")
+            self.assertFalse((output / "Hero_9999.ogg").exists())
+            manifest = json.loads((output / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest, {
+                "schemaVersion": 1,
+                "extension": "ogg",
+                "count": 1,
+                "ids": ["Hero_0001"],
+            })
+
+    def test_extract_audio_uses_fallback_decoder_for_unsupported_vorbis_header(self):
+        bad = SimpleNamespace(name="Hero_0002")
+
+        class FakeBank:
+            samples = [bad]
+
+            def rebuild_sample(self, sample):
+                raise ValueError("unknown Vorbis CRC")
+
+            def get_sample_extension(self):
+                return "ogg"
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            calls = []
+
+            result = extract_audio(
+                game,
+                root / "audio",
+                dialogue_ids={"Hero_0002"},
+                bank_loader=lambda data: FakeBank(),
+                fallback_decoder=lambda index, source: calls.append((index, source)) or b"fallback-ogg",
+            )
+
+            self.assertEqual(calls, [(1, fsb.resolve())])
+            self.assertEqual((root / "audio/Hero_0002.ogg").read_bytes(), b"fallback-ogg")
+            self.assertEqual(result["fallback_exported"], 1)
+
+    def test_extract_audio_rejects_symlink_manifest(self):
+        class EmptyBank:
+            samples = []
+
+            def get_sample_extension(self):
+                return "ogg"
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            output = root / "audio"
+            output.mkdir()
+            victim = root / "victim.json"
+            victim.write_text("DO NOT TOUCH", encoding="utf-8")
+            (output / "manifest.json").symlink_to(victim)
+
+            with self.assertRaises(ValueError):
+                extract_audio(game, output, dialogue_ids=set(), bank_loader=lambda data: EmptyBank())
+            self.assertEqual(victim.read_text(encoding="utf-8"), "DO NOT TOUCH")
+
+    def test_extract_audio_rejects_symlink_audio_file(self):
+        sample = SimpleNamespace(name="Hero_0001")
+
+        class FakeBank:
+            samples = [sample]
+
+            def rebuild_sample(self, value):
+                return b"new audio"
+
+            def get_sample_extension(self):
+                return "ogg"
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            output = root / "audio"
+            output.mkdir()
+            victim = root / "victim.ogg"
+            victim.write_bytes(b"DO NOT TOUCH")
+            (output / "Hero_0001.ogg").symlink_to(victim)
+
+            with self.assertRaises(ValueError):
+                extract_audio(game, output, dialogue_ids={"Hero_0001"}, bank_loader=lambda data: FakeBank())
+            self.assertEqual(victim.read_bytes(), b"DO NOT TOUCH")
+
+    def test_extract_audio_rejects_symlink_output(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            target = root / "target"
+            target.mkdir()
+            output = root / "audio"
+            output.symlink_to(target, target_is_directory=True)
+
+            with self.assertRaises(ValueError):
+                extract_audio(game, output, dialogue_ids=set(), bank_loader=lambda data: None)
+
+    def test_extract_audio_rejects_symlinked_output_ancestor(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            fsb = game / "Content/Audio/FMOD/Build/Desktop/VO.fsb"
+            fsb.parent.mkdir(parents=True)
+            fsb.write_bytes(b"fake")
+            external = root / "external"
+            external.mkdir()
+            linked_parent = root / "linked-public"
+            linked_parent.symlink_to(external, target_is_directory=True)
+
+            class EmptyBank:
+                samples = []
+
+                def get_sample_extension(self):
+                    return "ogg"
+
+            with self.assertRaises(ValueError):
+                extract_audio(
+                    game,
+                    linked_parent / "audio",
+                    dialogue_ids=set(),
+                    bank_loader=lambda data: EmptyBank(),
+                )
+
+            self.assertFalse((external / "audio").exists())
+
+
 class GeneratedDataRegressionTests(unittest.TestCase):
     def test_real_nested_text_and_csv_conflict_regressions(self):
         generated = Path(__file__).resolve().parents[1] / "generated/all.json"
@@ -243,6 +414,61 @@ class GeneratedDataRegressionTests(unittest.TestCase):
                          "Content/Subtitles/en/ZagreusHome.csv")
         self.assertEqual(records["ZagreusHome_2761"]["zh_source"],
                          "Content/Subtitles/zh-CN/ZagreusHome.csv")
+
+
+class PortraitExtractionTests(unittest.TestCase):
+    def test_extract_portraits_writes_channel_manifest_and_web_images(self):
+        from hades_dialogue.portraits import extract_portraits
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            package = game / "Content/Win/Packages/GUI.pkg"
+            package.parent.mkdir(parents=True)
+            package.write_bytes(b"fake package")
+
+            def fake_package_extractor(source, target, entries):
+                portraits = target / "textures/Portraits"
+                portraits.mkdir(parents=True)
+                (portraits / "Portraits_Achilles_01.png").write_bytes(b"achilles png")
+                (portraits / "Portraits_Megaera_01.png").write_bytes(b"megaera png")
+
+            result = extract_portraits(
+                game,
+                root / "portraits",
+                package_extractor=fake_package_extractor,
+                image_processor=lambda source: b"webp:" + source.read_bytes(),
+            )
+
+            manifest = json.loads((root / "portraits/manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["portraits"]["Achilles"], "Achilles.webp")
+            self.assertEqual(manifest["portraits"]["MegaeraField"], "Megaera.webp")
+            self.assertEqual((root / "portraits/Achilles.webp").read_bytes(), b"webp:achilles png")
+            self.assertEqual(result["exported"], 2)
+
+    def test_extract_portraits_rejects_symlinked_output_ancestor(self):
+        from hades_dialogue.portraits import extract_portraits
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            game = root / "game"
+            package = game / "Content/Win/Packages/GUI.pkg"
+            package.parent.mkdir(parents=True)
+            package.write_bytes(b"fake package")
+            external = root / "external"
+            external.mkdir()
+            linked_parent = root / "linked-public"
+            linked_parent.symlink_to(external, target_is_directory=True)
+
+            with self.assertRaises(ValueError):
+                extract_portraits(
+                    game,
+                    linked_parent / "portraits",
+                    package_extractor=lambda source, target, entries: None,
+                    image_processor=lambda source: b"unused",
+                )
+
+            self.assertFalse((external / "portraits").exists())
 
 
 if __name__ == "__main__":

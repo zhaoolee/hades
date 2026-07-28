@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "prepare:data": "node scripts/prepare-data.mjs",
-    "dev": "npm run prepare:data && vite --host 0.0.0.0",
-    "test": "vitest run",
-    "build": "npm run prepare:data && tsc -b && vite build",
+    "dev": "npm run prepare:data && vite --config vite.config.ts --host 0.0.0.0",
+    "test": "vitest run --config vite.config.ts",
+    "build": "npm run prepare:data && tsc -b && vite build --config vite.config.ts",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

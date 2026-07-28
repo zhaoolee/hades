@@ -19,6 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify copyrighted local assets are not tracked
+        run: |
+          python -c "import subprocess,sys; files=subprocess.check_output(['git','ls-files','web/public/audio','web/public/portraits'],text=True).splitlines(); forbidden=[p for p in files if not p.endswith('/.gitkeep')]; print('forbidden local assets:', forbidden); sys.exit(bool(forbidden))"
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
