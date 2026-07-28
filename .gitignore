@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+web/node_modules/
+web/dist/
+web/public/data/
+web/*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts

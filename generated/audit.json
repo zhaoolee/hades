@@ -1,0 +1,1486 @@
+{
+  "issue_counts": {
+    "csv_conflict": 11,
+    "csv_cross_file_conflict": 2,
+    "csv_duplicate": 103,
+    "lua_ambiguity": 27,
+    "sjson_overrides_csv": 1
+  },
+  "issues": [
+    {
+      "id": "Dusa_0106",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 43,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0107",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 44,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0108",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 45,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0109",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 46,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0110",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 47,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0111",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 48,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0112",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 49,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0113",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 50,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0114",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 51,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0115",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 52,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0116",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 53,
+      "source": "Content/Subtitles/en/Dusa.csv"
+    },
+    {
+      "id": "Eurydice_0184",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 94,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0185",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 95,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0186",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 96,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0187",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 97,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0188",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 98,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0189",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 99,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0190",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 100,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0191",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 101,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0192",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 102,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0193",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 103,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0194",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 104,
+      "source": "Content/Subtitles/en/Eurydice.csv"
+    },
+    {
+      "id": "Hades_0940",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 735,
+      "source": "Content/Subtitles/en/Hades.csv"
+    },
+    {
+      "id": "HadesField_0433",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 312,
+      "source": "Content/Subtitles/en/HadesField.csv"
+    },
+    {
+      "id": "HadesField_0506",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 378,
+      "source": "Content/Subtitles/en/HadesField.csv"
+    },
+    {
+      "id": "HadesField_0563",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 430,
+      "source": "Content/Subtitles/en/HadesField.csv"
+    },
+    {
+      "id": "Nyx_0452",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 170,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0453",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 171,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0456",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 172,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0457",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 173,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0458",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 174,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0459",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 175,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0460",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 176,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0461",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 177,
+      "source": "Content/Subtitles/en/Nyx.csv"
+    },
+    {
+      "id": "Orpheus_0177",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 53,
+      "source": "Content/Subtitles/en/Orpheus.csv"
+    },
+    {
+      "id": "Persephone_0284",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 53,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0285",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 54,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0286",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 55,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0288",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 57,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0289",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 58,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0290",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 59,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0291",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 60,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0292",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 61,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0293",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 62,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0294",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 63,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0295",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 64,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0296",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 65,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0329",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 98,
+      "source": "Content/Subtitles/en/Persephone.csv"
+    },
+    {
+      "id": "Skelly_0459",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 389,
+      "source": "Content/Subtitles/en/Skelly.csv"
+    },
+    {
+      "id": "Skelly_0460",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 390,
+      "source": "Content/Subtitles/en/Skelly.csv"
+    },
+    {
+      "id": "Skelly_0461",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 391,
+      "source": "Content/Subtitles/en/Skelly.csv"
+    },
+    {
+      "id": "Theseus_0450",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 448,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0451",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 449,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0452",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 450,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0453",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 451,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0454",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 452,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0455",
+      "kind": "csv_duplicate",
+      "language": "en",
+      "row": 453,
+      "source": "Content/Subtitles/en/Theseus.csv"
+    },
+    {
+      "discarded_source": "Content/Subtitles/en/ZagreusField.csv",
+      "id": "ZagreusHome_2761",
+      "kept_source": "Content/Subtitles/en/ZagreusHome.csv",
+      "kind": "csv_cross_file_conflict",
+      "language": "en",
+      "method": "id_prefix_channel"
+    },
+    {
+      "id": "Dusa_0106",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 43,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "discarded": "你好!",
+      "id": "Dusa_0107",
+      "kept": "好呀！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 44,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "discarded": "你好!",
+      "id": "Dusa_0108",
+      "kept": "好呀！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 45,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0109",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 46,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0110",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 47,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0111",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 48,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0112",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 49,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "discarded": "您好，殿下！",
+      "id": "Dusa_0113",
+      "kept": "殿下！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 50,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "discarded": "看是谁!",
+      "id": "Dusa_0114",
+      "kept": "看清楚啦！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 51,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Dusa_0115",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 52,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "discarded": "哎呀！",
+      "id": "Dusa_0116",
+      "kept": "哇！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 53,
+      "source": "Content/Subtitles/zh-CN/Dusa.csv"
+    },
+    {
+      "id": "Eurydice_0184",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 94,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0185",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 95,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0186",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 96,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0187",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 97,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "discarded": "让我高歌一曲吧。",
+      "id": "Eurydice_0188",
+      "kept": "让我高歌一首吧。",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 98,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0189",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 99,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0190",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 100,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0191",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 101,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0192",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 102,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0193",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 103,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Eurydice_0194",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 104,
+      "source": "Content/Subtitles/zh-CN/Eurydice.csv"
+    },
+    {
+      "id": "Hades_0940",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 735,
+      "source": "Content/Subtitles/zh-CN/Hades.csv"
+    },
+    {
+      "id": "HadesField_0433",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 312,
+      "source": "Content/Subtitles/zh-CN/HadesField.csv"
+    },
+    {
+      "id": "HadesField_0506",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 378,
+      "source": "Content/Subtitles/zh-CN/HadesField.csv"
+    },
+    {
+      "id": "HadesField_0563",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 430,
+      "source": "Content/Subtitles/zh-CN/HadesField.csv"
+    },
+    {
+      "id": "Nyx_0452",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 170,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0453",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 171,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0456",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 172,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0457",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 173,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0458",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 174,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0459",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 175,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0460",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 176,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Nyx_0461",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 177,
+      "source": "Content/Subtitles/zh-CN/Nyx.csv"
+    },
+    {
+      "id": "Orpheus_0177",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 53,
+      "source": "Content/Subtitles/zh-CN/Orpheus.csv"
+    },
+    {
+      "discarded": "抓得好！",
+      "id": "Persephone_0284",
+      "kept": "抓得漂亮！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 53,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "discarded": "噢，抓得好！",
+      "id": "Persephone_0285",
+      "kept": "噢，抓得漂亮！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 54,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0286",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 55,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0288",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 57,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0289",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 58,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "discarded": "真可惜啊。",
+      "id": "Persephone_0290",
+      "kept": "啊，好遗憾。",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 59,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0291",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 60,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0292",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 61,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0293",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 62,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0294",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 63,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "discarded": "不应该这样。",
+      "id": "Persephone_0295",
+      "kept": "不应该这样才对。",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 64,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0296",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 65,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Persephone_0329",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 98,
+      "source": "Content/Subtitles/zh-CN/Persephone.csv"
+    },
+    {
+      "id": "Skelly_0459",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 389,
+      "source": "Content/Subtitles/zh-CN/Skelly.csv"
+    },
+    {
+      "id": "Skelly_0460",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 390,
+      "source": "Content/Subtitles/zh-CN/Skelly.csv"
+    },
+    {
+      "id": "Skelly_0461",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 391,
+      "source": "Content/Subtitles/zh-CN/Skelly.csv"
+    },
+    {
+      "id": "Theseus_0450",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 448,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "discarded": "奥林匹斯，我需要你们立刻帮忙！",
+      "id": "Theseus_0451",
+      "kept": "奥林匹斯，我需要你们立刻帮助！",
+      "kind": "csv_conflict",
+      "language": "zh-CN",
+      "row": 449,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0452",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 450,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0453",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 451,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0454",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 452,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "id": "Theseus_0455",
+      "kind": "csv_duplicate",
+      "language": "zh-CN",
+      "row": 453,
+      "source": "Content/Subtitles/zh-CN/Theseus.csv"
+    },
+    {
+      "discarded_source": "Content/Subtitles/zh-CN/ZagreusField.csv",
+      "id": "ZagreusHome_2761",
+      "kept_source": "Content/Subtitles/zh-CN/ZagreusHome.csv",
+      "kind": "csv_cross_file_conflict",
+      "language": "zh-CN",
+      "method": "id_prefix_channel"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Ah, now this is something, lad! I'd hate to think that you've returned to bring me this just for my sake. Though I'm grateful, really."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Ah, now this is something, lad. I'd hate to think that you've returned to bring me this just for my sake. Though I am grateful, really."
+        }
+      ],
+      "chosen": "Ah, now this is something, lad! I'd hate to think that you've returned to bring me this just for my sake. Though I'm grateful, really.",
+      "id": "Achilles_0064",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Gguhhhhhh...."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Uunngggghhhh...."
+        }
+      ],
+      "chosen": "Gguhhhhhh....",
+      "id": "Charon_0003",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EncounterData.lua",
+          "text": "Heeehhhhhhh...."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Hheeehhhhhhh...."
+        }
+      ],
+      "chosen": "Heeehhhhhhh....",
+      "id": "Charon_0014",
+      "kind": "lua_ambiguity",
+      "method": "deterministic_fallback"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EncounterData.lua",
+          "text": "Hnnnggghhhh...."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Hrrrrrnnnggghh..."
+        }
+      ],
+      "chosen": "Hrrrrrnnnggghh...",
+      "id": "Charon_0019",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "...Khhrraaa hhaaaaahhhh..."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Khhrraaa hhaaaaahhhh...."
+        }
+      ],
+      "chosen": "...Khhrraaa hhaaaaahhhh...",
+      "id": "Charon_0027",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Grrrhhhoooaaaaaahhhh...!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Hrrrhhhaaaaauuugghhh...!"
+        }
+      ],
+      "chosen": "Grrrhhhoooaaaaaahhhh...!",
+      "id": "Charon_0037",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Nnnrrrraaaaaauugggghhh!!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmnnnrraaauuugggghhh!!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Nnnrrraaaauggghhhh...."
+        }
+      ],
+      "chosen": "Nnnrrrraaaaaauugggghhh!!",
+      "id": "Charon_0038",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Nrrnnhhh, hnnnn, hrrnn, hrrrrrnnn..."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Nrrnnhhh, hnnnn, hrrnn, hrrrrrnnn...."
+        }
+      ],
+      "chosen": "Nrrnnhhh, hnnnn, hrrnn, hrrrrrnnn...",
+      "id": "Charon_0040",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Hrrrnngaaaaugh!!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Urrraaauuhggghh..."
+        }
+      ],
+      "chosen": "Urrraaauuhggghh...",
+      "id": "Charon_0062",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Krrr, krraauuuggghhhh...!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Krrhh, hrraaaahhh...!"
+        }
+      ],
+      "chosen": "Krrr, krraauuuggghhhh...!",
+      "id": "Charon_0106",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "...patch up the seating, update the menu, clean the stove, stock the honor bar, sweep the rug, dust the rafters, mop the flooring, pay the broker, oh!! Um, sorry, Prince, way behind on my assignment, so if you'll excuse me, please...?"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "...patch up the seating, update the menu, clean the stove, stock the honor bar, sweep the rug, dust the rafters, mop the flooring, pay the broker, oh!! Um, sorry, Prince, way behind on my assignment, so if you'd excuse me, please...?"
+        }
+      ],
+      "chosen": "...patch up the seating, update the menu, clean the stove, stock the honor bar, sweep the rug, dust the rafters, mop the flooring, pay the broker, oh!! Um, sorry, Prince, way behind on my assignment, so if you'll excuse me, please...?",
+      "id": "Dusa_0121",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/LootData.lua",
+          "text": "Hah, good! I like these little chats! Take care, now, boss."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/LootData.lua",
+          "text": "Hah! Good, I like these little chats! Take care, now, boss."
+        }
+      ],
+      "chosen": "Hah, good! I like these little chats! Take care, now, boss.",
+      "id": "Hermes_0085",
+      "kind": "lua_ambiguity",
+      "method": "deterministic_fallback"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "May I help you somehow, Zagreus? Because if not, why don't you leave me be."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "May I help you somehow, Zagreus, because if not, why don't you leave me be?"
+        }
+      ],
+      "chosen": "May I help you somehow, Zagreus? Because if not, why don't you leave me be.",
+      "id": "MegaeraHome_0022",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Yes, what is it, this time?"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "Yes, what is it this time?"
+        }
+      ],
+      "chosen": "Yes, what is it, this time?",
+      "id": "Patroclus_0052",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "What's the use? Let's say we fought, if anybody asks. Now, go. I've no quarrel with you, besides. I'll just remain here, comfortably at rest, for some untold millennia, I guess. Have a nice... whatever time it is."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "What's the use? Let's say we fought, if anybody asks, now go. I've no quarrel with you, besides. I'll just remain here, comfortably at rest, for some untold millennia, I guess. Have a nice... whatever time it is."
+        }
+      ],
+      "chosen": "What's the use? Let's say we fought, if anybody asks. Now, go. I've no quarrel with you, besides. I'll just remain here, comfortably at rest, for some untold millennia, I guess. Have a nice... whatever time it is.",
+      "id": "Patroclus_0105",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/DeathLoopData.lua",
+          "text": "'Hades: I can no longer tolerate my life here in this place. So, I am leaving, even if it kills me. I won't be returning to Olympus. If there is a place where I belong in this world, it must be somewhere between heaven and hell. Perhaps it's on the coast and has a little garden. Take care of Cerberus; I shall miss him.'"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/RoomData.lua",
+          "text": "'Hades: I can no longer tolerate my life here in this place. So, I am leaving, even if it kills me. I won't be returning to Olympus. If there is a place where I belong in this world, it must be somewhere between heaven and hell. Perhaps it's on the coast and has a little garden. Take care of Cerberus; I shall miss him.  --Persephone'"
+        }
+      ],
+      "chosen": "'Hades: I can no longer tolerate my life here in this place. So, I am leaving, even if it kills me. I won't be returning to Olympus. If there is a place where I belong in this world, it must be somewhere between heaven and hell. Perhaps it's on the coast and has a little garden. Take care of Cerberus; I shall miss him.'",
+      "id": "Persephone_0018",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "I met her, you know. Persephone, I mean. You look more like your father, but... you have her eyes. One of them, anyway."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "I met her, you know. Persephone, I mean. You look more like your father, but, you have her eyes. One of them, anyway."
+        }
+      ],
+      "chosen": "I met her, you know. Persephone, I mean. You look more like your father, but... you have her eyes. One of them, anyway.",
+      "id": "Thanatos_0211",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Silence, you monster! I'll hear no more such wicked lies, half-truths, or quarter-truths! You, however, soon shall hear my blessed spear! Specifically, the sound it makes whilst sliding into your exposed midsection! Defend yourself!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Silence, you monster!! I'll hear no more such wicked lies, half-truths, or quarter-truths! You, however, soon shall hear my blessed spear! Specifically, the sound it makes whilst sliding into your exposed midsection! Defend yourself!"
+        }
+      ],
+      "chosen": "Silence, you monster! I'll hear no more such wicked lies, half-truths, or quarter-truths! You, however, soon shall hear my blessed spear! Specifically, the sound it makes whilst sliding into your exposed midsection! Defend yourself!",
+      "id": "Theseus_0006",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Please fight with me, again, Asterius. I mean, just like before! You must forgive me my indecencies of late. This blasted fiend! His lies and treachery get right under my skin. Or the phantasmagorical equivalent!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Please fight with me, again, Asterius. I mean, just like before! You must forgive me my indecencies of late. This blasted fiend... his lies and treachery get right under my skin. Or the phantasmagorical equivalent!"
+        }
+      ],
+      "chosen": "Please fight with me, again, Asterius. I mean, just like before! You must forgive me my indecencies of late. This blasted fiend! His lies and treachery get right under my skin. Or the phantasmagorical equivalent!",
+      "id": "Theseus_0548",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Murrddderrrr? Murrdderrr. Murddder!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Murder...? Murrdderrr. Murddder!"
+        }
+      ],
+      "chosen": "Murrddderrrr? Murrdderrr. Murddder!",
+      "id": "Tisiphone_0019",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmmuurrderrerrr...."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmmuurrderrerrr...!"
+        }
+      ],
+      "chosen": "Mmmuurrderrerrr...!",
+      "id": "Tisiphone_0024",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmm, hrr-hrr-hrrdderrr..."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmm-hhhm-hmm-mmurrdderrr..."
+        }
+      ],
+      "chosen": "Mmm, hrr-hrr-hrrdderrr...",
+      "id": "Tisiphone_0026",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmuuurrrderrrr..."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Mmuuurrrrrderrrr...."
+        }
+      ],
+      "chosen": "Mmuuurrrderrrr...",
+      "id": "Tisiphone_0027",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Zagreuss murderrrerrrr!"
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Zagreuss murderrrer!"
+        }
+      ],
+      "chosen": "Zagreuss murderrrer!",
+      "id": "Tisiphone_0174",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "I'll figure something out. But you do something for me, in the mean time: Don't give in to what you're feeling now, all right? Achilles loves you still, like you don't know."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/NPCData.lua",
+          "text": "I'll figure something out. But you do something for me, in the meantime: Don't give in to what you're feeling now, all right? Achilles loves you still, like you don't know."
+        }
+      ],
+      "chosen": "I'll figure something out. But you do something for me, in the mean time: Don't give in to what you're feeling now, all right? Achilles loves you still, like you don't know.",
+      "id": "ZagreusField_1725",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/LootData.lua",
+          "text": "Message for you, Lord Hermes! It says, 'This offering is dedicated to the incomparable god of swiftness, from whom the news is always good, because he's bringing it. You are a real mate, you know that? I really owe you one.' Zagreus."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/LootData.lua",
+          "text": "Message for you, Lord Hermes! It says, This offering is dedicated to the incomparable god of swiftness, from whom the news is always good, because he's bringing it. You are a real mate, you know that? I really owe you one. Zagreus."
+        }
+      ],
+      "chosen": "Message for you, Lord Hermes! It says, 'This offering is dedicated to the incomparable god of swiftness, from whom the news is always good, because he's bringing it. You are a real mate, you know that? I really owe you one.' Zagreus.",
+      "id": "ZagreusField_3875",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    },
+    {
+      "csv_zh": "再见，塔纳。",
+      "id": "ZagreusHome_0822",
+      "kind": "sjson_overrides_csv",
+      "sjson_zh": "……再见，塔纳。"
+    },
+    {
+      "candidate_count": 2,
+      "candidates": [
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Then you'd be dead, forever? You're asking me to kill you."
+        },
+        {
+          "fallback": false,
+          "source": "Content/Scripts/EnemyData.lua",
+          "text": "Then you'd be dead... forever? You're asking me to kill you."
+        }
+      ],
+      "chosen": "Then you'd be dead, forever? You're asking me to kill you.",
+      "id": "ZagreusHome_1405",
+      "kind": "lua_ambiguity",
+      "method": "sjson_comment"
+    }
+  ],
+  "missing": {
+    "en": [],
+    "zh": []
+  },
+  "schema_version": 1,
+  "sources": {
+    "lua_file_count": 97,
+    "lua_root": "Content/Scripts",
+    "sjson": [
+      "Content/Game/Text/zh-CN/_DeathLoopData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_EncounterData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_EnemyData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_LootData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_NPCData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomData.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataAsphodel.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataElysium.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataSecrets.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataStyx.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataSurface.zh-CN.sjson",
+      "Content/Game/Text/zh-CN/_RoomDataTartarus.zh-CN.sjson"
+    ],
+    "subtitle_csv": {
+      "en": [
+        "Content/Subtitles/en/Achilles.csv",
+        "Content/Subtitles/en/Alecto.csv",
+        "Content/Subtitles/en/Aphrodite.csv",
+        "Content/Subtitles/en/Ares.csv",
+        "Content/Subtitles/en/Artemis.csv",
+        "Content/Subtitles/en/Athena.csv",
+        "Content/Subtitles/en/Chaos.csv",
+        "Content/Subtitles/en/Demeter.csv",
+        "Content/Subtitles/en/Dionysus.csv",
+        "Content/Subtitles/en/Dusa.csv",
+        "Content/Subtitles/en/Eurydice.csv",
+        "Content/Subtitles/en/ExtraLines.csv",
+        "Content/Subtitles/en/Hades.csv",
+        "Content/Subtitles/en/HadesField.csv",
+        "Content/Subtitles/en/Hypnos.csv",
+        "Content/Subtitles/en/Intercom.csv",
+        "Content/Subtitles/en/MegaeraField.csv",
+        "Content/Subtitles/en/MegaeraHome.csv",
+        "Content/Subtitles/en/Minotaur.csv",
+        "Content/Subtitles/en/Nyx.csv",
+        "Content/Subtitles/en/Orpheus.csv",
+        "Content/Subtitles/en/Patroclus.csv",
+        "Content/Subtitles/en/Persephone.csv",
+        "Content/Subtitles/en/Poseidon.csv",
+        "Content/Subtitles/en/Scratch.csv",
+        "Content/Subtitles/en/Sisyphus.csv",
+        "Content/Subtitles/en/Skelly.csv",
+        "Content/Subtitles/en/Songs.csv",
+        "Content/Subtitles/en/Storyteller.csv",
+        "Content/Subtitles/en/Thanatos.csv",
+        "Content/Subtitles/en/ThanatosField.csv",
+        "Content/Subtitles/en/Theseus.csv",
+        "Content/Subtitles/en/Tisiphone.csv",
+        "Content/Subtitles/en/ZagreusField.csv",
+        "Content/Subtitles/en/ZagreusHome.csv",
+        "Content/Subtitles/en/ZagreusScratch.csv",
+        "Content/Subtitles/en/Zeus.csv"
+      ],
+      "zh-CN": [
+        "Content/Subtitles/zh-CN/Achilles.csv",
+        "Content/Subtitles/zh-CN/Alecto.csv",
+        "Content/Subtitles/zh-CN/Aphrodite.csv",
+        "Content/Subtitles/zh-CN/Ares.csv",
+        "Content/Subtitles/zh-CN/Artemis.csv",
+        "Content/Subtitles/zh-CN/Athena.csv",
+        "Content/Subtitles/zh-CN/Chaos.csv",
+        "Content/Subtitles/zh-CN/Demeter.csv",
+        "Content/Subtitles/zh-CN/Dionysus.csv",
+        "Content/Subtitles/zh-CN/Dusa.csv",
+        "Content/Subtitles/zh-CN/Eurydice.csv",
+        "Content/Subtitles/zh-CN/ExtraLines.csv",
+        "Content/Subtitles/zh-CN/Hades.csv",
+        "Content/Subtitles/zh-CN/HadesField.csv",
+        "Content/Subtitles/zh-CN/Hypnos.csv",
+        "Content/Subtitles/zh-CN/Intercom.csv",
+        "Content/Subtitles/zh-CN/MegaeraField.csv",
+        "Content/Subtitles/zh-CN/MegaeraHome.csv",
+        "Content/Subtitles/zh-CN/Minotaur.csv",
+        "Content/Subtitles/zh-CN/Nyx.csv",
+        "Content/Subtitles/zh-CN/Orpheus.csv",
+        "Content/Subtitles/zh-CN/Patroclus.csv",
+        "Content/Subtitles/zh-CN/Persephone.csv",
+        "Content/Subtitles/zh-CN/Poseidon.csv",
+        "Content/Subtitles/zh-CN/Scratch.csv",
+        "Content/Subtitles/zh-CN/Sisyphus.csv",
+        "Content/Subtitles/zh-CN/Skelly.csv",
+        "Content/Subtitles/zh-CN/Songs.csv",
+        "Content/Subtitles/zh-CN/Storyteller.csv",
+        "Content/Subtitles/zh-CN/Thanatos.csv",
+        "Content/Subtitles/zh-CN/ThanatosField.csv",
+        "Content/Subtitles/zh-CN/Theseus.csv",
+        "Content/Subtitles/zh-CN/Tisiphone.csv",
+        "Content/Subtitles/zh-CN/ZagreusField.csv",
+        "Content/Subtitles/zh-CN/ZagreusHome.csv",
+        "Content/Subtitles/zh-CN/ZagreusScratch.csv",
+        "Content/Subtitles/zh-CN/Zeus.csv"
+      ]
+    }
+  },
+  "statistics": {
+    "bilingual": 20694,
+    "channels": 42,
+    "csv_bilingual_ids": 13305,
+    "csv_sjson_overlap": 1,
+    "csv_union_ids": 13305,
+    "missing_en": 0,
+    "missing_zh": 0,
+    "sjson_active_ids": 7390,
+    "sjson_with_lua_english": 7390,
+    "unique_ids": 20694
+  }
+}
